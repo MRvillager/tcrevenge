@@ -1,5 +1,5 @@
 # tcrevenge
-Hacking TrendChip Firmware (ADSL modem/router ZTE H108NS)
+Hacking TrendChip Firmware (ADSL modem/router Digicom RAW300U-A02/Aztech DSL5008)
 
 ## Purpose
 **tcrevenge** is a command line utility that helps you analyze and compose TrendChip firmware images (tclinux.bin). It reimplements the **CRC** algorithm found in firmware that prohibits broken or custom firmware uploads.
@@ -81,7 +81,6 @@ The header has the following fields
 * 0x30 a newline = “\n”
 * 0x50 squashfs offset = 0x9560 in my case
 * 0x54 squashfs size = size of squashfs size as reported by binwalk 5038080 bytes padded to 4096 (0x1000) sector 5038080 (0x4CE000)
-* 0x5C model string = “3 6035 122 74\n” in my case
 
 See https://vasvir.wordpress.com/2015/03/08/reverse-engineering-trendchip-firmware-zte-h108ns-part-i/ for more information.
 
